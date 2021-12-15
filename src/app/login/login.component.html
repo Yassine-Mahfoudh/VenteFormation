@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <div class="modal" style="display: none;">
+        <p>Nom d'utilisateur ou mot de pass est incorrect</p>
+    </div>
+    <div class="login">
+        <div class="login_content">
+            <div class="titre">Accéder à votre compte</div>
+            <form action="" onsubmit="sendtostorage()">
+                <div class="inputs">
+                    <input type="text" placeholder="Nom utilisateur" required id="usermail">
+                    <input type="password" name="psw" id="psw" required placeholder="Mot de pass">
+                </div>
+                <input type="submit" value="Connectez" class="btn">
+            </form>
+            <a routerLink="/signup" class="account">Creer un compte</a>
+        </div>
+    </div>
+</body>
+<script>
+    
+</script>
+</html>

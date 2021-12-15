@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #f3e9e7;
+    
+    
+    height: 600px;
+    align-items: center;
+}
+.modal
+{
+    background-color: rgb(255, 52, 52);
+    color: #ffffff;
+    padding: 10px;
+    font-size: large;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 20px;
+   transition: 0.5s;
+}
+.info
+{
+    position: relative;
+    background-color: #00a7c7;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info div
+{
+    display: flex;
+    align-items: center;
+}
+.info button
+{
+    padding: 5px;
+   border-radius: 20px;
+   border:#fff 2px solid ;
+   background: none;
+   color: #fff;
+   font-size: 1em;
+   transition: 0.5s;
+   cursor: pointer;
+}
+.login
+{
+    display: flex;
+    justify-self: center;
+    background-color: #00a7c7;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+.login .login_content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    color: #fff;
+    align-items: center;
+}
+.login .login_content .titre
+{
+    font-size: large;
+    font-family: sans-serif;
+}
+.login .login_content form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login .login_content form .inputs
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.login .login_content form .inputs input
+{
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+.login .login_content form .btn
+{
+   padding: 5px;
+   border-radius: 20px;
+   border:#fff 2px solid ;
+   background: none;
+   color: #fff;
+   font-size: 1em;
+   transition: 0.5s;
+   cursor: pointer;
+}
+.login .login_content form .btn:hover
+{
+    background: #fff;
+    color: #00a7c7;
+}
+.login .login_content .account
+{
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+.close
+{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}

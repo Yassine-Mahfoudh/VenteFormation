@@ -1,0 +1,112 @@
+.box
+{
+    width: 200px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    
+}
+.box .img_cover
+{
+    width: 100%;
+    height: 50%;
+    margin: 10px;
+}
+.box .title
+{
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+.box .img_cover
+{
+   display: flex;
+   justify-items: center; 
+}
+.box .img_cover img
+{
+    width: 175px;
+    border-radius: 20px;
+
+}
+.box a
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    background-color: #00a7c7;
+    border-radius: 20px;
+    width: min-content;
+    margin: 0 20px;
+}
+.box .title_level
+{
+    display: flex;
+    align-items: center;
+}
+.box .title_level .title
+{
+    padding: 0 20px;
+}
+.box .title_level .level 
+{
+    padding: 0 20px;
+}
+.box .title_level .level::before{
+    content: "(";
+}
+.box .title_level .level::after{
+    content: ")";
+}
+.box .categorie
+{
+    display: flex;
+    padding: 0 20px;
+}
+.box .categorie label
+{
+    background-color:rgb(114, 151, 253);
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px;
+    height: min-content;
+}
+.buttons
+{
+    display: flex;
+    justify-content: center;
+}
+.buttons .update 
+{
+    background: none;
+    color: #00a7c7;
+    padding: 5px 15px;
+    border: #00a7c7 1px solid;
+    margin: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.buttons .update:hover 
+{
+    background-color: #00a7c7;
+    color: #fff;
+}
+.buttons .delete 
+{
+    background: none;
+    color: #f00;
+    padding: 5px 15px;
+    border: #f00 1px solid;
+    margin: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.buttons .delete:hover 
+{
+    background-color: #F00;
+    color: #fff;
+}

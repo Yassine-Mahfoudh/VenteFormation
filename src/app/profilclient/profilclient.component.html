@@ -1,0 +1,26 @@
+<app-navclient></app-navclient>
+<div class="info profile" id="info">
+    <div>NOM : <p>Jon Doe</p></div>
+    <div> Role : <p>Formateur ou Client</p></div>
+    <button onclick="profileupdate()">Modifier</button>
+</div>
+<article>
+<div class="login profile info" style="display: none;" id="updateprofile">
+    <div class="login_content">
+        <div class="titre">Modifier votre compte</div>
+        <form action="" method="post" #editForm="ngForm" (ngSubmit)="onUpdateUser(editForm)">
+            <div class="inputs">
+                <input type="text" placeholder="Nom utilisateur">
+                <div class="role"><label>Vous êtes :</label>
+                <input type="radio" name="role" value="f" disabled>Formateur
+                <input type="radio" name="role" value="c" disabled>Client</div>
+                <input type="text" placeholder="Numéro de téléphone">
+                <input type="text" placeholder="E-mail"> 
+                <input type="password" name="psw" id="psw" placeholder="Mot de pass">
+                <input type="password" name="rpsw" id="rpsw" placeholder="Re- Mot de pass">
+            </div>
+            <input type="submit" [disabled]="editForm.invalid" value="Modifier" class="btn">
+        </form>
+    </div>
+</div>
+</article>

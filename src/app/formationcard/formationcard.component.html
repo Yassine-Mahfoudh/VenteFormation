@@ -1,0 +1,15 @@
+<div class="card" style="display: none" id="card">
+    <div class="side"> <i class="fas fa-times onclick="closemodal()"> </i></div>
+   <form class="card_contain" #addForm="ngForm" (ngSubmit)="onAddFormation(addForm)">
+     <div class="img">
+       <input type="file" name="pic" id="pic" ngmodel required />
+     </div>
+     <div class="input">
+       <input type="text" name="titre" id="titre" placeholder="Titre" ngmodel required />
+       <input type="text" name="cat" id="cat" placeholder="Catégories" ngmodel required/>
+       <input type="text" name="level" id="lvl" placeholder="Level" ngmodel required />
+       <input type="text" name="prix" id="prix" placeholder="Prix" ngmodel required />
+       <button [disabled]="addForm.invalid" type="submit" class="btn" id="add-formation-form">Ajouter</button>
+     </div>
+    </form>
+ </div>

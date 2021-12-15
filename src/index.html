@@ -8,6 +8,28 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+<app-root></app-root>
 </body>
+<script>
+
+
+function profileupdate(){
+  document.getElementById("updateprofile").style.display = "flex";
+  document.getElementById("info").style.display = "none"; 
+}
+
+</script>
+<script>
+function openmodalEdit(){
+  document.getElementById("cardEdit").style.display = "flex";
+  document.getElementById("article").style.opacity = "25%";}
+
+function openmodal(){
+  document.getElementById("card").style.display = "flex";
+  document.getElementById("article").style.opacity = "25%";}
+function closemodal(){
+  document.getElementById("card").style.display = "none";
+  document.getElementById("cardEdit").style.display="none";
+  document.getElementById("article").style.opacity = "100%";   }
+</script>
 </html>

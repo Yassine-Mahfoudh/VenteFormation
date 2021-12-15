@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css"
+      integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="modal" id="modal" style="display: none;">
+        <div class="close">
+            <i class="fas fa-times" onclick="closemodal()"></i>
+        </div>
+        <div>Il y'a un probléme lors de création du compte! <br>
+            SVP vérifier les données</div>
+    </div>
+    <div class="login">
+        <div class="login_content">
+            <div class="titre">Accéder à votre compte</div>
+            <form action="" method="post">
+                <div class="inputs">
+                    <input type="text" placeholder="Nom utilisateur">
+                    <input type="email" placeholder="E-Mail">
+                    <div class="role"><label>Vous êtes :</label>
+                    <input type="radio" name="role" value="f">Formateur
+                    <input type="radio" name="role" value="c">Client                   </div>
+                    <input type="text" name="phone" placeholder="Phone Number">
+                    <input type="password" name="psw" id="psw" placeholder="Mot de pass">
+                    <input type="password" name="rpsw" id="rpsw" placeholder="Re- Mot de pass">
+                </div>
+                <input type="submit" value="Creer Votre Compte" class="btn">
+            </form>
+            <a routerLink="/login" class="account">vous avez déjà un compte?</a>
+        </div>
+    </div>
+</body>
+<script>
+    function closemodal()
+    {
+        document.getElementById("modal").style.display = "none"
+    }
+</script>
+</html>

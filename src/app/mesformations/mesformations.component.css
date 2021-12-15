@@ -210,10 +210,9 @@ article .article_contain .box-container .box .categorie label
     opacity: 100%;
     z-index: 100;
     transition: 0.5s;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-left: 150px;
     flex-direction: column;
-    top: 0;
 }
 .input
 {
